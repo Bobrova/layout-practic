@@ -1,25 +1,35 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import {
+  HashRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import styles from './style.scss';
+import Main from 'pages/Main';
+import Blaz from 'pages/Blaz';
 
-const App = ({ history }) => {
-  const handleLinkClick = () => {
-    console.log('here');
-    history.push('/layout1');
-  };
+import { store } from '../../store/configureStore';
 
+const App = () => {
   return (
-    <section className={styles.page}>
-      <div className={styles.main}>
-        <div className={styles.link} onClick={handleLinkClick}>Layout</div>
-      </div>
-    </section>
+    <HashRouter>
+      <Provider store={store}>
+        <Switch>
+          <Route
+            path="/"
+            component={Main}
+            exact
+          />
+          <Route
+            path="/blaz"
+            component={Blaz}
+            exact
+          />
+        </Switch>
+      </Provider>
+    </HashRouter>
   );
-};
-
-App.propTypes = {
-  history: PropTypes.object.isRequired,
 };
 
 export default App;

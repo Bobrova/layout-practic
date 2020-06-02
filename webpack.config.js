@@ -24,6 +24,8 @@ module.exports = {
       selectors: path.resolve(__dirname, 'src/selectors/'),
       reducers: path.resolve(__dirname, 'src/reducers/'),
       pages: path.resolve(__dirname, 'src/pages/'),
+      img: path.resolve(__dirname, 'src/assets/images'),
+      styles: path.resolve(__dirname, 'src/styles'),
     },
   },
 
@@ -43,7 +45,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: true,
-              localIdentName: '[local]___[hash:base64:5]',
+              localIdentName: '[name]__[local]--[hash:base64:5]',
             },
           },
         ],
@@ -57,11 +59,26 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: true,
-              localIdentName: '[local]___[hash:base64:5]',
+              localIdentName: '[name]__[local]--[hash:base64:5]',
             },
           },
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(gif|png|svg|jpe?g)$/,
+        loader: 'file-loader',
+        options: {
+          limit: 10240,
+          name: '[name].[hash:8].[ext]',
+        },
+      },
+      {
+        test: /\.(woff2?|ttf|eot|otf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[hash:8].[ext]',
+        },
       },
     ],
   },

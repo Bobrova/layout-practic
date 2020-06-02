@@ -8,6 +8,9 @@ import { Provider } from 'react-redux';
 
 import Main from 'pages/Main';
 import Blaz from 'pages/Blaz';
+import Hardware from 'pages/Hardware';
+
+import 'styles/fonts/fonts.css';
 
 import { store } from '../../store/configureStore';
 
@@ -19,6 +22,11 @@ const App = () => {
           <Route
             path="/"
             component={Main}
+            exact
+          />
+          <Route
+            path="/hardware"
+            component={Hardware}
             exact
           />
           <Route

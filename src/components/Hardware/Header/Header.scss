@@ -1,0 +1,50 @@
+.root {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(360deg, #223036 0%, #223036 100%);
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.login {
+  position: absolute;
+  right: 0;
+  height: 0;
+  font-family: 'PTSansCaption', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  padding: 12px 19px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  margin: 30px 20px;
+}
+
+.categoryName {
+  width: 370px;
+  height: 80px;
+}
+
+.categoryDescription {
+  width: 610px;
+  height: 100%;
+}
+
+.description {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'PTSansCaption', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+}

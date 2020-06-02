@@ -4,14 +4,19 @@ import PropTypes from 'prop-types';
 import styles from './style.scss';
 
 const Main = ({ history }) => {
-  const handleLinkClick = () => {
+  const handleLinkBlazClick = () => {
     history.push('/blaz');
+  };
+
+  const handleLinkHardwareClick = () => {
+    history.push('/hardware');
   };
 
   return (
     <section className={styles.page}>
       <div className={styles.main}>
-        <div className={styles.link} onClick={handleLinkClick}>Blaz</div>
+        <div className={styles.link} onClick={handleLinkBlazClick}>Blaz</div>
+        <div className={styles.link} onClick={handleLinkHardwareClick}>Hardware</div>
       </div>
     </section>
   );

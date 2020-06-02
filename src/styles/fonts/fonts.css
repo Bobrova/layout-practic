@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'BrutalType';
+  src: url('./BrutalType.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

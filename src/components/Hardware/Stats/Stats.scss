@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.icon {
+  width: 14px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5px;
+}
+
+.number {
+  font-family: 'PTSans', sans-serif;
+  font-size: 10px;
+  color: #fff;
+}

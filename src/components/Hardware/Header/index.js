@@ -1,4 +1,6 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import HardwareSVG from 'img/Hardware.svg';
 import Loupe from 'img/Loupe.svg';
 import styles from './Header.scss';
@@ -31,8 +33,9 @@ const Header = () => {
           <div className={styles.link}>Тесты</div>
           <div className={styles.link}>Серии</div>
           <div className={styles.link}>Рубрики</div>
-          <div className={styles.search} style={{ backgroundImage: `URL(${Loupe})` }} />
+          <div className={classNames(styles.link, styles.hidden)}>Поиск</div>
         </div>
+        <div className={styles.search} style={{ backgroundImage: `URL(${Loupe})` }} />
       </div>
     </div>
   );

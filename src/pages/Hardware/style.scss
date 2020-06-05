@@ -5,4 +5,124 @@ body {
 .root {
   width: 1200px;
   margin: 0 auto;
+  background-color: #fff;
+  font-family: 'PTSans', sans-serif;
+}
+
+.mainContent {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 70px;
+}
+
+.title {
+  margin: 30px 70px;
+  font-family: 'PTSans', sans-serif;
+  font-size: 28px;
+}
+
+.mainNews {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 75%;
+  color: #fff;
+
+  &__item {
+    position: relative;
+    height: 492px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__topNews {
+    width: 100%;
+    padding: 120px 20px 20px 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+
+  &__leftNews {
+    width: 68%;
+    margin-right: 2%;
+    padding: 100px 20px 20px 20px;
+    box-sizing: border-box;
+  }
+
+  &__rightNews {
+    width: 30%;
+    padding: 100px 20px 20px 20px;
+    box-sizing: border-box;
+  }
+
+  &__category {
+    width: 118px;
+    height: 24px;
+    margin: 20px 0;
+    border-radius: 2px;
+    background-color: #faaf3f;
+    font-family: 'BrutalType', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f49f21;
+    }
+  }
+
+  &__title {
+    width: 85%;
+    font-family: 'BrutalType', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+  }
+
+  &__description {
+    margin-top: 30px;
+  }
+
+  &__createData {
+    color: #fff;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+
+    &_column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .author {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .dateCreate {
+    font-size: 10px;
+  }
+}
+
+.statsWrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }

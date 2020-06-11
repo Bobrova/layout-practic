@@ -13,8 +13,7 @@ const Serie = ({ serieWrap }) => {
       <div className={styles.articles}>
         <div className={styles.articles__item}>Мифы в IT-образовании</div>
         <div className={styles.articles__item}>
-          У iPhone нет шансов, а компьютеры не нужны.
-          Топ-8 самых вопиющих IT-заблуждений в истории
+          25 самых популярных мифов о программировании и программистах
         </div>
         <div className={styles.articles__item}>
           У iPhone нет шансов, а компьютеры не нужны.

@@ -1,12 +1,18 @@
 .root {
+  width: 250px;
+  padding-right: 10px;
   margin-left: 10px;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .item {
-  width: 250px;
+  width: 100%;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   box-sizing: border-box;
 
   &__top {
@@ -16,7 +22,7 @@
     &__name {
       width: 92px;
       height: 24px;
-      font-family: 'BrutalType', sans-serif;
+      font-family: 'Brutal', sans-serif;
       font-size: 14px;
       color: #fff;
       text-align: center;
@@ -32,34 +38,42 @@
       line-height: 24px;
       color: #0776d2;
 
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
+      @media screen and (min-width: 1024px) {
+        transition: all 0.3s ease;
+
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
       }
     }
   }
 
   &__title {
-    font-family: 'BrutalType', sans-serif;
+    font-family: 'Brutal', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 24px;
     color: #333;
-    margin: 20px 0;
+    margin: 16px 0;
   }
 
   &__button {
     width: 100%;
     height: 32px;
+    margin-top: 20px;
     background-color: #faaf3f;
     color: #fff;
-    font-family: 'BrutalType', sans-serif;
+    font-family: 'Brutal', sans-serif;
     font-size: 14px;
     line-height: 32px;
     text-align: center;
 
-    &:hover {
-      cursor: pointer;
-      background-color: #f49f21;
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        cursor: pointer;
+        background-color: #f49f21;
+      }
     }
   }
 
@@ -72,8 +86,8 @@
 }
 
 .articles {
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 15px;
+  padding-top: 8px;
   border-left: 1px solid;
   border-image: linear-gradient(#fff 1%, #828282 5%, #828282 95%, #fff 99%) 1 100%;
 
@@ -82,6 +96,7 @@
     font-family: 'PTSans', sans-serif;
     font-size: 15px;
     line-height: 21px;
+    letter-spacing: 0.2px;
     color: #333;
     margin-bottom: 20px;
 
@@ -89,7 +104,7 @@
       content: '';
       position: absolute;
       top: 0;
-      left: -25.5px;
+      left: -20.5px;
       transform: translateY(6px);
       width: 10px;
       height: 10px;
@@ -97,15 +112,23 @@
       background-color: #828282;
     }
 
-    &:hover {
-      cursor: pointer;
-      color: #faaf3f;
-    }
+    @media screen and (min-width: 1024px) {
+      transition: all 0.3s ease;
 
-    &:hover::before {
-      cursor: pointer;
-      background-color: #faaf3f;
+      &:hover {
+        cursor: pointer;
+        color: #faaf3f;
+      }
+
+      &:hover::before {
+        cursor: pointer;
+        background-color: #faaf3f;
+      }
     }
+  }
+
+  &__item:last-child {
+    margin-bottom: 30px;
   }
 }
 
@@ -113,14 +136,14 @@
   position: relative;
   width: 100%;
   height: 238px;
-  margin: 20px 0;
+  margin: 20px 0 0;
   padding: 61px 20px 20px;
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
 
   &__title {
-    font-family: 'BrutalType', sans-serif;
+    font-family: 'Brutal', sans-serif;
     font-size: 20px;
     line-height: 25px;
     color: #fff;
@@ -137,11 +160,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 214px;
+  width: 100%;
   height: 146px;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 20px 0;
+  background-size: cover;
+  margin: 26px 0 17px;
 
   &__play {
     width: 32px;
@@ -152,21 +176,21 @@
 }
 
 .date {
-  margin: 15px 0;
+  margin-top: 20px;
   font-family: 'PTSans', sans-serif;
   font-weight: bold;
   font-size: 15px;
 }
 
 .time {
-  margin: 15px 0;
+  margin-top: 10px;
   font-family: 'PTSans', sans-serif;
   font-size: 14px;
   color: #516e77;
 }
 
 .articleTitle {
-  margin: 15px 0;
+  margin-top: 10px;
   font-family: 'PTSans', sans-serif;
   font-size: 15px;
   line-height: 21px;

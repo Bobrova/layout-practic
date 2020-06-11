@@ -1,4 +1,11 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const PATHS = {
+  src: path.join(__dirname, 'src'),
+  dist: path.join(__dirname, 'dist'),
+  assets: 'assets/',
+};
 
 module.exports = {
   entry: './src/index.js',
@@ -74,12 +81,20 @@ module.exports = {
         },
       },
       {
-        test: /\.(woff2?|ttf|eot|otf)$/,
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[hash:8].[ext]',
+          name: '[name].[ext]',
         },
       },
     ],
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [{
+        from: `${PATHS.src}/styles/fonts`,
+        to: `${PATHS.assets}/fonts`,
+      }],
+    }),
+  ],
 };

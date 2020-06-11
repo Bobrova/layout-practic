@@ -5,15 +5,8 @@
 }
 
 @font-face {
-  font-family: 'PTSans-caption';
-  src: url('/assets/fonts/PTSansCaption-Regular.ttf') format('truetype');
-  font-weight: normal;
-}
-
-@font-face {
   font-family: 'Brutal';
   src: url('/assets/fonts/BrutalRegular.woff') format('woff');
-  font-weight: normal;
 }
 
 @font-face {
@@ -25,5 +18,5 @@
 @font-face {
   font-family: 'Brutal';
   src: url('/assets/fonts/BrutalBold.woff') format('woff');
-  font-weight: bold;
+  font-weight: 700;
 }

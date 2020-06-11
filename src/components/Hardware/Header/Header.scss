@@ -5,51 +5,102 @@
 
 .header_top {
   width: 100%;
-  background: linear-gradient(360deg, #223036 0%, #223036 100%);
+  background: #223036;
+  // background-color: pink;
   padding: 1px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.mobilePosition {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .login {
   position: absolute;
-  right: 0;
-  height: 0;
+  right: 19px;
+  top: 12px;
   font-family: 'PTSans', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: bold;
   color: #fff;
-  padding: 12px 19px;
 
-  &:hover {
-    cursor: pointer;
+  @media screen and (min-width: 1023px) {
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 0;
+    right: 16px;
+    top: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    margin: 0 5px;
   }
 }
 
 .category {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-  margin: 30px 20px;
+  align-items: flex-start;
+  padding: 6px 60px 34px 42px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding: 4px 0 35px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: 6px 56px 20px 28px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .categoryName {
-  width: 370px;
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 380px;
+  height: 100%;
+  margin-right: 55px;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    margin-right: 20px;
+  }
 }
 
 .categoryDescription {
-  width: 610px;
   height: 100%;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .description {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'PTSans', sans-serif;
+  margin-top: -5px;
   font-size: 14px;
   line-height: 22px;
   color: #fff;
@@ -58,34 +109,77 @@
 .dropDawn {
   position: relative;
   display: inline-block;
-  width: 15px;
+  width: 13px;
   height: 2px;
   background-color: #000;
-  margin: 0 25px 0 50px;
+  margin: 0 3px 0 33px;
 
   &::before {
     content: '';
     position: absolute;
-    top: -6px;
+    top: -5px;
     left: 0;
-    width: 15px;
+    width: 13px;
     height: 2px;
-    background-color: #000;
+    background-color: inherit;
   }
 
   &::after {
     content: '';
     position: absolute;
-    top: 6px;
+    top: 5px;
     left: 0;
-    width: 15px;
+    width: 13px;
     height: 2px;
-    background-color: #000;
+    background-color: inherit;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    margin: 0 10px 0 40px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    background-color: #fff;
+    margin: 0 15px;
+    width: 19px;
+    height: 3px;
+
+    &::after,
+    &::before {
+      width: 19px;
+      height: 3px;
+    }
+
+    &::after {
+      top: 6.5px;
+    }
+
+    &::before {
+      top: -6.5px;
+    }
+  }
+}
+
+.dropDawnMobile {
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.dropDawnDesktop {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
   }
 }
 
 .navigation {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -94,29 +188,141 @@
 .menuLinks {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 50%;
   height: 48px;
+
+  @media screen and (max-width: 1023px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    justify-content: space-between;
+    width: 55%;
+    padding: 0 5px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .link {
-  font-family: 'BrutalType', sans-serif;
+  padding: 3px 14px;
+  font-family: 'Brutal', sans-serif;
   font-size: 16px;
-  margin: 0 25px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f49f21;
+      border-radius: 2px;
+      color: #fff;
+    }
+  }
 }
 
-.search {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 15px;
-  height: 100%;
-  margin-right: 20px;
+.loupe {
+  width: 17px;
+  height: 15px;
+  margin-right: 12px;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1439px) {
+    margin-right: 20px;
+  }
 }
 
 .hidden {
   display: none;
+}
+
+.logoWrap {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 5px;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+}
+
+.logo {
+  display: none;
+  width: 14px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.mobileLeftHeader {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  @media screen and (max-width: 767px) {
+    margin: 6px 0;
+  }
+}
+
+.mobileRightHeader {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px 5px 0;
+}
+
+.searchTable {
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    display: block;
+  }
+}
+
+.loupeDesktop {
+  display: block;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.loupeMobile {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-right: 3px;
+  }
 }

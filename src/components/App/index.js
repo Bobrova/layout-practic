@@ -10,8 +10,6 @@ import Main from 'pages/Main';
 import Blaz from 'pages/Blaz';
 import Hardware from 'pages/Hardware';
 
-import 'styles/fonts/fonts.css';
-
 import { store } from '../../store/configureStore';
 
 const App = () => {

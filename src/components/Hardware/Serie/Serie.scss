@@ -1,17 +1,17 @@
 .root {
-  width: 380px;
-  padding: 20px;
+  padding: 15px 20px 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   text-align: center;
 }
 
 .title {
-  font-family: 'BrutalType', sans-serif;
+  font-family: 'Brutal', sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #333;
-  margin: 20px 0;
+  margin: 5px 0 10px;
+  padding-right: 40px;
   text-align: left;
 }
 
@@ -28,7 +28,7 @@
     font-size: 15px;
     line-height: 21px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
     &::before {
       content: '';
@@ -42,31 +42,44 @@
       background-color: #828282;
     }
 
-    &:hover {
-      cursor: pointer;
-      color: #faaf3f;
-    }
+    @media screen and (min-width: 1024px) {
+      transition: all 0.3s ease;
 
-    &:hover::before {
-      cursor: pointer;
-      background-color: #faaf3f;
+      &:hover {
+        cursor: pointer;
+        color: #faaf3f;
+      }
+
+      &:hover::before {
+        cursor: pointer;
+        background-color: #faaf3f;
+      }
     }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
   }
 }
 
 .button {
   display: inline-block;
-  margin: 0 auto;
-  padding: 0 40px;
+  margin: 20px auto 0;
+  padding: 0 42px;
   background-color: #faaf3f;
   color: #fff;
-  font-family: 'BrutalType', sans-serif;
+  font-family: 'Brutal', sans-serif;
   font-size: 14px;
   line-height: 32px;
   text-align: center;
 
-  &:hover {
-    cursor: pointer;
-    background-color: #f49f21;
+  @media screen and (max-width: 1023px) {
+    display: block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f49f21;
+    }
   }
 }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="20" height="16" viewBox="0 0 20 16">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #4b5053;
+        filter: url(#filter-chain-1);
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="1"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#f0f0f0" flood-opacity="1"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+      <feFlood flood-color="#707070" flood-opacity="1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="dropShadow" result="colorOverlay"/>
+    </filter>
+  </defs>
+  <path d="M17.581,13.753 C17.186,14.324 16.402,14.467 15.831,14.072 C15.831,14.072 10.662,10.494 10.662,10.494 C10.296,10.242 10.106,9.830 10.120,9.416 C9.454,10.130 8.580,10.610 7.600,10.788 C6.397,11.008 5.181,10.745 4.178,10.051 C3.175,9.357 2.501,8.313 2.282,7.110 C2.062,5.907 2.324,4.691 3.019,3.687 C4.454,1.613 7.309,1.093 9.383,2.528 C11.266,3.832 11.867,6.305 10.889,8.301 C11.271,8.141 11.724,8.172 12.092,8.426 C12.092,8.426 17.263,12.003 17.263,12.003 C17.834,12.399 17.977,13.182 17.581,13.753 ZM9.917,5.719 C9.765,4.880 9.295,4.152 8.595,3.668 C7.150,2.667 5.159,3.029 4.157,4.474 C3.156,5.922 3.519,7.913 4.965,8.912 C6.410,9.913 8.401,9.552 9.403,8.106 C9.887,7.406 10.070,6.558 9.917,5.719 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

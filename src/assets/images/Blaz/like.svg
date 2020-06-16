@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="20" height="19" viewBox="0 0 20 19">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #989898;
+        stroke: #b1b1b1;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        filter: url(#filter-chain-1);
+        opacity: 0.7;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feImage x="3.15625" y="3.875" preserveAspectRatio="none" width="12.28125" height="10.6875" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTIuMjgxMjUiIGhlaWdodD0iMTAuNjg3NSI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjQuODA5IiB5MT0iMTAuNjg4IiB4Mj0iNy40NzMiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4xMiIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+      <feOffset in="SourceAlpha" dx="0.5" dy="0.866"/>
+      <feGaussianBlur result="innerShadowBlur" stdDeviation="1"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.49"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="normal" in2="gradientFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <g id="shape-2-copy-26" style="fill: #989898; filter: url(#filter-chain-1);">
+    <path d="M9.992,6.491 C8.401,2.778 3.879,3.645 3.849,7.954 C3.833,10.321 6.003,11.206 7.447,12.152 C8.848,13.070 9.845,14.325 10.002,14.859 C10.135,14.335 11.246,13.045 12.543,12.126 C13.961,11.122 16.157,10.295 16.141,7.928 C16.111,3.608 11.510,2.926 9.992,6.491 Z" id="path-1" class="cls-2" style="stroke: inherit; filter: none; fill: inherit;" fill-rule="evenodd"/>
+  </g>
+  <use xlink:href="#path-1" style="stroke: #b1b1b1; fill: none; filter: none;"/>
+</svg>

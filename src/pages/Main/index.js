@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Layer from 'img/Blaz/layer.png';
+
 import styles from './style.scss';
 
 const Main = ({ history }) => {
@@ -13,12 +15,12 @@ const Main = ({ history }) => {
   };
 
   return (
-    <section className={styles.page}>
+    <div className={styles.page} style={{ backgroundImage: `URL(${Layer})` }}>
       <div className={styles.main}>
         <div className={styles.link} onClick={handleLinkBlazClick}>Blaz</div>
         <div className={styles.link} onClick={handleLinkHardwareClick}>Hardware</div>
       </div>
-    </section>
+    </div>
   );
 };
 

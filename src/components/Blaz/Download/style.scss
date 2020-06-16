@@ -1,0 +1,100 @@
+.otherDownloadsList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    margin-top: 10px;
+    width: 312px;
+
+    &__pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 312px;
+      height: 200px;
+    }
+
+    &__plus {
+      position: relative;
+      width: 22px;
+      height: 4px;
+      background-color: #fff;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-2px, -11px);
+        width: 4px;
+        height: 22px;
+        background-color: #fff;
+      }
+    }
+
+    &__name {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 27px;
+      font-weight: bold;
+      margin: 15px 0 15px;
+      color: #4b5053;
+    }
+
+    &__text {
+      font-family: Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 22px;
+      color: #4b5053;
+    }
+  }
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create {
+  display: flex;
+
+  &__dateCreate {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    font-style: oblique;
+    color: #bdbdbd;
+  }
+
+  &__author {
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+    font-style: oblique;
+    font-weight: bold;
+  }
+}
+
+.stats {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    &__count {
+      font-family: Helvetica, sans-serif;
+      font-size: 11px;
+    }
+
+    &__icon {
+      width: 22px;
+      height: 22px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

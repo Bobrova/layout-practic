@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #4b5053;
+      }
+
+      .cls-4 {
+        fill: #ffffff;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0.5" dy="0.866"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="1"/>
+      <feFlood flood-color="#000000" flood-opacity="0.13"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+    </filter>
+  </defs>
+  <g id="mail">
+    <circle id="circle-1" class="cls-3" cx="15" cy="15" r="15"/>
+    <path d="M18.437,16.477 C18.437,16.477 21.829,13.593 21.829,13.593 C21.829,13.593 21.829,20.893 21.829,20.893 C21.829,20.893 18.437,16.477 18.437,16.477 ZM10.766,13.032 C10.766,13.032 21.802,13.032 21.802,13.032 C21.802,13.032 16.284,17.724 16.284,17.724 C16.284,17.724 10.766,13.032 10.766,13.032 ZM10.724,20.912 C10.724,20.912 10.733,13.589 10.733,13.589 C10.733,13.589 14.131,16.477 14.131,16.477 C14.131,16.477 10.724,20.912 10.724,20.912 ZM16.283,18.307 C16.283,18.307 16.283,18.310 16.283,18.310 C16.283,18.310 16.284,18.308 16.284,18.308 C16.284,18.308 16.285,18.310 16.285,18.310 C16.285,18.310 16.285,18.307 16.285,18.307 C16.285,18.307 18.166,16.709 18.166,16.709 C18.166,16.709 21.418,20.941 21.418,20.941 C21.418,20.941 11.151,20.941 11.151,20.941 C11.151,20.941 14.402,16.709 14.402,16.709 C14.402,16.709 16.283,18.307 16.283,18.307 Z" id="path-1" class="cls-4" fill-rule="evenodd"/>
+  </g>
+</svg>

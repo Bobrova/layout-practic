@@ -1,9 +1,10 @@
-body {
+.root {
+  width: 100%;
+  height: 100%;
   background: #e5e5e5;
-  font-family: 'PTSans', sans-serif;
 }
 
-.root {
+.wrap {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;

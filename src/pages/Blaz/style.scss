@@ -1,0 +1,251 @@
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  width: 980px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.header {
+  padding-bottom: 20px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 0;
+
+  &__name {
+    width: 110px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &__item {
+    font-weight: bold;
+    color: #4b5053;
+    margin-right: 30px;
+    border-bottom: 3px solid transparent;
+    transition: border 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      border-color: #f26c4f;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    background-color: #4b5053;
+    transition: all 0.3s ease;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f26c4f;
+    }
+
+    &__icon {
+      width: 18px;
+      height: 18px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 394px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+  color: #4b5053;
+}
+
+.downloadsList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    margin-top: 10px;
+
+    &__pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 312px;
+      height: 200px;
+    }
+
+    &__plus {
+      position: relative;
+      width: 22px;
+      height: 4px;
+      background-color: #fff;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-2px, -11px);
+        width: 4px;
+        height: 22px;
+        background-color: #fff;
+      }
+    }
+
+    &__name {
+      font-family: Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 27px;
+      font-weight: bold;
+      margin: 15px 0 15px;
+      color: #4b5053;
+    }
+  }
+}
+
+.informationBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    padding: 7px 0;
+    color: #4b5053;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+  }
+
+  &__item {
+    width: 312px;
+    max-height: 330px;
+  }
+
+  &__text {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #4b5053;
+    padding: 10px 0;
+  }
+}
+
+.searchLoupe {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inputBlock {
+  display: flex;
+  justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+  font-style: oblique;
+  padding: 10px 0;
+  color: #bbb;
+}
+
+.inputFind {
+  width: 235px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  outline: none;
+}
+
+.btnFind {
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    color: #fff;
+  }
+}
+
+.categories {
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 7px 0;
+
+    &__name {
+      padding: 4px 0;
+      border-bottom: 3px dotted #cecece;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: 12px;
+      color: #4b5053;
+
+      &:hover {
+        cursor: pointer;
+        color: #bfbfbf;
+      }
+    }
+  }
+}
+
+.otherDownloadsList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -27,3 +27,14 @@
   src: url('/assets/fonts/BrutalBold.woff') format('woff');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/gotham-rounded/GothamRounded-Book.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/gotham-rounded/GothamRounded-Bold.otf') format('otf');
+  font-weight: bold;
+}

@@ -46,7 +46,6 @@
 }
 
 @font-face {
-  font-family: 'Gotham';
+  font-family: 'Gotham_BookItalic';
   src: url('/assets/fonts/GothamRounded-BookItalic.otf') format('otf');
-  font-style: BookItalic;
 }

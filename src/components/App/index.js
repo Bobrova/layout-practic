@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import Main from 'pages/Main';
 import Blaz from 'pages/Blaz';
 import Hardware from 'pages/Hardware';
+import TwoBytes from 'pages/TwoBytes';
 
 import { store } from '../../store/configureStore';
 
@@ -30,6 +31,11 @@ const App = () => {
           <Route
             path="/blaz"
             component={Blaz}
+            exact
+          />
+          <Route
+            path="/twobytes"
+            component={TwoBytes}
             exact
           />
         </Switch>

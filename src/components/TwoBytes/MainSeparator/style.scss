@@ -1,0 +1,36 @@
+.blockSeparator {
+  display: flex;
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+
+  &__color1 {
+    height: 100%;
+    width: 7.69%;
+    background-color: #4acaff;
+  }
+
+  &__color2 {
+    height: 100%;
+    width: 7.69%;
+    background-color: #3fb3e3;
+  }
+
+  &__color3 {
+    height: 100%;
+    width: 7.69%;
+    background-color: #79d8ff;
+  }
+
+  &__color4 {
+    height: 100%;
+    width: 7.69%;
+    background-color: #7e9dac;
+  }
+
+  &__color5 {
+    height: 100%;
+    width: 7.69%;
+    background-color: #3baedd;
+  }
+}

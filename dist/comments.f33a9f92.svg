@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="23" height="20" viewBox="0 0 23 20">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #b0b0b0;
+        stroke: #b1b1b1;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        filter: url(#filter-chain-1);
+        opacity: 0.7;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feImage x="3.90625" y="3" preserveAspectRatio="none" width="14.71875" height="12.5625" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQuNzE4NzUiIGhlaWdodD0iMTIuNTYyNSI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUuNzkzIiB5MT0iMTIuNTYyIiB4Mj0iOC45MjUiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMDAwMDAiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgb3BhY2l0eT0iMC4xMiIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+      <feOffset in="SourceAlpha" dx="0.5" dy="0.866"/>
+      <feGaussianBlur result="innerShadowBlur" stdDeviation="1"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.49"/>
+      <feComposite operator="out" in2="innerShadowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="normal" in2="gradientFill" result="innerShadow"/>
+    </filter>
+  </defs>
+  <g id="shape-19-copy-8" style="fill: #b0b0b0; filter: url(#filter-chain-1);">
+    <path d="M17.784,3.721 C17.784,3.721 5.220,3.721 5.220,3.721 C4.622,3.721 4.138,4.205 4.138,4.802 C4.138,4.802 4.138,12.288 4.138,12.288 C4.138,12.885 4.622,13.369 5.220,13.369 C5.220,13.369 10.370,13.369 10.370,13.369 C10.370,13.369 9.183,16.270 9.183,16.270 C9.183,16.270 12.585,13.369 12.585,13.369 C12.585,13.369 17.784,13.369 17.784,13.369 C18.381,13.369 18.865,12.885 18.865,12.288 C18.865,12.288 18.865,4.802 18.865,4.802 C18.865,4.205 18.381,3.721 17.784,3.721 Z" id="path-1" class="cls-2" style="stroke: inherit; filter: none; fill: inherit;" fill-rule="evenodd"/>
+  </g>
+  <use xlink:href="#path-1" style="stroke: #b1b1b1; fill: none; filter: none;"/>
+</svg>

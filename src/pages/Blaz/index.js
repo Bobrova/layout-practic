@@ -42,12 +42,6 @@ const Blaz = () => {
               <div className={styles.social__item}>
                 <div className={styles.social__item__icon} style={{ backgroundImage: `URL(${Twitter})` }} />
               </div>
-              {/* <div className={styles.social__item} style={{ backgroundImage: `URL(${Rss})` }} />
-              <div className={styles.social__item} style={{ backgroundImage: `URL(${Mail})` }} />
-              <div
-                className={styles.social__item}
-                style={{ backgroundImage: `URL(${Twitter})` }}
-              /> */}
             </div>
           </div>
         </div>

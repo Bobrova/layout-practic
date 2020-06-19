@@ -6,19 +6,17 @@ import Layer from 'img/Blaz/layer.png';
 import styles from './style.scss';
 
 const Main = ({ history }) => {
-  const handleLinkBlazClick = () => {
-    history.push('/blaz');
-  };
-
-  const handleLinkHardwareClick = () => {
-    history.push('/hardware');
+  const handleLinkClick = e => {
+    const path = e.target.getAttribute('data-path');
+    history.push(path);
   };
 
   return (
     <div className={styles.page} style={{ backgroundImage: `URL(${Layer})` }}>
       <div className={styles.main}>
-        <div className={styles.link} onClick={handleLinkBlazClick}>Blaz</div>
-        <div className={styles.link} onClick={handleLinkHardwareClick}>Hardware</div>
+        <div className={styles.link} data-path="/blaz" onClick={handleLinkClick}>Blaz</div>
+        <div className={styles.link} data-path="/hardware" onClick={handleLinkClick}>Hardware</div>
+        <div className={styles.link} data-path="/twobytes" onClick={handleLinkClick}>TwoBytes</div>
       </div>
     </div>
   );

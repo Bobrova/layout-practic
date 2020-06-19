@@ -30,11 +30,23 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/assets/fonts/gotham-rounded/GothamRounded-Book.otf') format('otf');
+  src: url('/assets/fonts/GothamRounded-Book.otf') format('otf');
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('/assets/fonts/gotham-rounded/GothamRounded-Bold.otf') format('otf');
+  src: url('/assets/fonts/GothamRounded-Bold.otf') format('otf');
   font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/GothamRounded-Medium.otf') format('otf');
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/GothamRounded-BookItalic.otf') format('otf');
+  font-style: BookItalic;
 }
